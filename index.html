@@ -2,12 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>New Tab</title>
   </head>
-  <body class="w-full h-screen overflow-hidden bg-[#333]">
-    <div id="app"></div>
+  <body class="w-full h-screen overflow-hidden bg-[#212121]">
+    <div
+      data-links
+      class="w-full h-full flex justify-center content-center items-center text-8xl gap-16 flex-wrap"
+    ></div>
+
+    <div
+      class="font-clock fixed bottom-0 w-full flex justify-center items-center pb-8 select-none"
+    >
+      <h1 data-clock class="text-5xl">12:34</h1>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

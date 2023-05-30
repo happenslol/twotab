@@ -10,11 +10,22 @@
     "fix": "prettier -w ."
   },
   "devDependencies": {
+    "@fontsource/rubik": "^5.0.1",
+    "@iconify-json/eva": "^1.1.6",
+    "@iconify-json/mdi": "^1.1.52",
+    "@iconify-json/ph": "^1.1.5",
+    "@iconify-json/ri": "^1.1.9",
+    "@iconify-json/simple-icons": "^1.1.55",
+    "@iconify/tailwind": "^0.1.2",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.2",
+    "unplugin-fonts": "^1.0.3",
     "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
   }
 }
