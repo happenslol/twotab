@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     Unfonts({
       fontsource: {
-        families: [{ name: "Rubik", weights: [500, 700] }],
+        families: [{ name: "Rubik", weights: [700], subset: "latin" }],
       },
     }),
   ],

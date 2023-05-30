@@ -37,7 +37,7 @@ const items: ItemOptions[] = [
     alt: "GitLab",
     icon: "icon-[ri--gitlab-line]",
     href: "https://gitlab.com",
-    keymap: "f",
+    keymap: "t",
   },
 ]
 
