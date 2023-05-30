@@ -63,6 +63,9 @@ const clockElement = document.querySelector(
   "[data-clock]"
 ) as HTMLHeadingElement
 
-setInterval(() => {
+const updateClock = () => {
   clockElement.textContent = format(new Date(), "HH:mm")
-}, 1000)
+}
+
+updateClock()
+setInterval(updateClock, 1000)
