@@ -1,7 +1,7 @@
 {
   "name": "twotab",
   "private": true,
-  "version": "0.1.2",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "fix": "prettier -w .",
     "ext:start": "pnpm run build && web-ext run --source-dir ./dist",
-    "ext:build": "pnpm run build && web-ext build --source-dir ./dist --overwrite-dest"
+    "ext:build": "./scripts/ext-build.bash"
   },
   "devDependencies": {
     "@fontsource/rubik": "^5.0.1",

@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-pnpm run build
-pnpm web-ext build --source-dir ./dist --overwrite-dest
-
 PACKAGE_VERSION="$(jq -r ".version" package.json)"
 MANIFEST_VERSION="$(jq -r ".version" public/manifest.json)"
 
@@ -15,5 +12,11 @@ rm -f "$OUT_FILE"
 
 mkdir -p web-ext-artifacts
 
+# NOTE: We actually want word splitting here, since the files
+# should be passed as separate arguments to zip.
 # shellcheck disable=2046
 zip -r "$OUT_FILE" $(git ls-files)
+
+pnpm run build
+pnpm web-ext build --source-dir ./dist --overwrite-dest
+
