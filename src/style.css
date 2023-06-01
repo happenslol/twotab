@@ -14,3 +14,11 @@ a,
 li {
   @apply text-white;
 }
+
+[data-clock].initial {
+  @apply opacity-0;
+}
+
+[data-links].initial {
+  @apply opacity-0 translate-y-2;
+}

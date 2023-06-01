@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
   "name": "twotab",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "license": "MIT",
 
   "browser_specific_settings": {
     "gecko": {
@@ -13,6 +14,7 @@
   "display": "standalone",
   "theme_color": "#82aaff",
   "background_color": "#212121",
+
   "chrome_settings_overrides": {
     "homepage": "index.html"
   },
